@@ -95,7 +95,7 @@ vk.updates.startPolling().then(() => {
 vk.updates.start().catch(console.error);
 
 
-express().use(express.static(path.join(__dirname, 'public'))).set('views', path.join(__dirname, 'views')).set('view engine', 'ejs').get('/', (req, res) => res.render('')).listen(PORT);
+if (config.link !== "") express().use(express.static(path.join(__dirname, 'public'))).set('views', path.join(__dirname, 'views')).set('view engine', 'ejs').get('/', (req, res) => res.render('')).listen(PORT);
 
 rl.on('line', (input) => {
     switch (input.split(" ")[0]) {
@@ -116,4 +116,4 @@ rl.on('line', (input) => {
     }
 });
 
-setInterval(function () {request(config.link)}, 240000);
+if (config.link !== "") setInterval(function () {request(config.link)}, 240000);
