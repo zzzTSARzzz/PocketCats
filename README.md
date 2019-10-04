@@ -30,4 +30,5 @@ npm start
 
 
 > Разработано в [The Grail](https://vk.com/The_Grail)
+
 > [Поддержать разработчиков](https://qiwi.me/The_Grail)
