@@ -1,0 +1,18 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Bot for vk.com/PocketCats",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "vk.com/The_Grail",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "vk-io": "^4.0.0-rc.20",
+    "ejs": "^2.7.1"
+  }
+}
